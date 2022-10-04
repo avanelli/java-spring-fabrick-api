@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "fabrickapi.url",
+    "type": "java.lang.String",
+    "description": "Fabrick API Endpoint"
+  },
+  {
+    "name": "fabrickapi.apikey",
+    "type": "java.lang.String",
+    "description": "Fabrick Api Key"
+  }
+]}

@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "9cc69269-ea5c-4813-8541-258069a0ccfa",
+		"name": "Fabrick",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10896250"
+	},
+	"item": [
+		{
+			"name": "Money Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"creditor\": {\r\n    \"name\": \"John Doe\",\r\n    \"account\": {\r\n      \"accountCode\": \"IT23A0336844430152923804660\",\r\n      \"bicCode\": \"SELBIT2BXXX\"\r\n    },\r\n    \"address\": {\r\n      \"address\": null,\r\n      \"city\": null,\r\n      \"countryCode\": null\r\n    }\r\n  },\r\n  \"executionDate\": \"2019-04-01\",\r\n  \"uri\": \"REMITTANCE_INFORMATION\",\r\n  \"description\": \"Payment invoice 75/2017\",\r\n  \"amount\": 800,\r\n  \"currency\": \"EUR\",\r\n  \"isUrgent\": false,\r\n  \"isInstant\": false,\r\n  \"feeType\": \"SHA\",\r\n  \"feeAccountId\": \"45685475\",\r\n  \"taxRelief\": {\r\n    \"taxReliefId\": \"L449\",\r\n    \"isCondoUpgrade\": false,\r\n    \"creditorFiscalCode\": \"56258745832\",\r\n    \"beneficiaryType\": \"NATURAL_PERSON\",\r\n    \"naturalPersonBeneficiary\": {\r\n      \"fiscalCode1\": \"MRLFNC81L04A859L\",\r\n      \"fiscalCode2\": null,\r\n      \"fiscalCode3\": null,\r\n      \"fiscalCode4\": null,\r\n      \"fiscalCode5\": null\r\n    },\r\n    \"legalPersonBeneficiary\": {\r\n      \"fiscalCode\": null,\r\n      \"legalRepresentativeFiscalCode\": null\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/accounts/14537780/payments/money-transfers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"14537780",
+						"payments",
+						"money-transfers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"creditor\": {\r\n    \"name\": \"John Doe\",\r\n    \"account\": {\r\n      \"accountCode\": \"IT23A0336844430152923804660\",\r\n      \"bicCode\": \"SELBIT2BXXX\"\r\n    },\r\n    \"address\": {\r\n      \"address\": null,\r\n      \"city\": null,\r\n      \"countryCode\": null\r\n    }\r\n  },\r\n  \"executionDate\": \"2019-04-01\",\r\n  \"uri\": \"REMITTANCE_INFORMATION\",\r\n  \"description\": \"Payment invoice 75/2017\",\r\n  \"amount\": 800,\r\n  \"currency\": \"EUR\",\r\n  \"isUrgent\": false,\r\n  \"isInstant\": false,\r\n  \"feeType\": \"SHA\",\r\n  \"feeAccountId\": \"45685475\",\r\n  \"taxRelief\": {\r\n    \"taxReliefId\": \"L449\",\r\n    \"isCondoUpgrade\": false,\r\n    \"creditorFiscalCode\": \"56258745832\",\r\n    \"beneficiaryType\": \"NATURAL_PERSON\",\r\n    \"naturalPersonBeneficiary\": {\r\n      \"fiscalCode1\": \"MRLFNC81L04A859L\",\r\n      \"fiscalCode2\": null,\r\n      \"fiscalCode3\": null,\r\n      \"fiscalCode4\": null,\r\n      \"fiscalCode5\": null\r\n    },\r\n    \"legalPersonBeneficiary\": {\r\n      \"fiscalCode\": null,\r\n      \"legalRepresentativeFiscalCode\": null\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/accounts/14537780/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"14537780",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"creditor\": {\r\n    \"name\": \"John Doe\",\r\n    \"account\": {\r\n      \"accountCode\": \"IT23A0336844430152923804660\",\r\n      \"bicCode\": \"SELBIT2BXXX\"\r\n    },\r\n    \"address\": {\r\n      \"address\": null,\r\n      \"city\": null,\r\n      \"countryCode\": null\r\n    }\r\n  },\r\n  \"executionDate\": \"2019-04-01\",\r\n  \"uri\": \"REMITTANCE_INFORMATION\",\r\n  \"description\": \"Payment invoice 75/2017\",\r\n  \"amount\": 800,\r\n  \"currency\": \"EUR\",\r\n  \"isUrgent\": false,\r\n  \"isInstant\": false,\r\n  \"feeType\": \"SHA\",\r\n  \"feeAccountId\": \"45685475\",\r\n  \"taxRelief\": {\r\n    \"taxReliefId\": \"L449\",\r\n    \"isCondoUpgrade\": false,\r\n    \"creditorFiscalCode\": \"56258745832\",\r\n    \"beneficiaryType\": \"NATURAL_PERSON\",\r\n    \"naturalPersonBeneficiary\": {\r\n      \"fiscalCode1\": \"MRLFNC81L04A859L\",\r\n      \"fiscalCode2\": null,\r\n      \"fiscalCode3\": null,\r\n      \"fiscalCode4\": null,\r\n      \"fiscalCode5\": null\r\n    },\r\n    \"legalPersonBeneficiary\": {\r\n      \"fiscalCode\": null,\r\n      \"legalRepresentativeFiscalCode\": null\r\n    }\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/accounts/14537780/transactions?fromAccountingDate=2021-01-01&toAccountingDate=2021-04-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"14537780",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "fromAccountingDate",
+							"value": "2021-01-01"
+						},
+						{
+							"key": "toAccountingDate",
+							"value": "2021-04-01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
